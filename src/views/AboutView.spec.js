@@ -21,7 +21,6 @@ describe('AboutView', () => {
             {
                 const labelElement = item.element
                 const labelFor = labelElement.getAttribute('for')
-                //console.log(inputName)
                 
                 if (labelFor == inputName)
                 {
@@ -30,12 +29,10 @@ describe('AboutView', () => {
                     if(inputName == null){
                         return true
                     }
-                    console.log("inputName: "+inputName)
-                    console.log("label: "+labelFor)
+                 
                 }
             
             })
-            console.log(teste)
             expect(teste).toBe(true);
         }
     });
